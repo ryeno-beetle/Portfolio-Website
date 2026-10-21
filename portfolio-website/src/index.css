@@ -1,0 +1,15 @@
+:root {
+}
+
+@font-face {
+  font-family: 'DotGothic16';
+  src: local('DotGothic16'), url(./fonts/DotGothic16/DotGothic16-Regular.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+@font-face {
+  font-family: 'reactor7';
+  src: local('reactor7'), url(./fonts/reactor7/reactor7.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}

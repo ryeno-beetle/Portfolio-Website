@@ -1,0 +1,53 @@
+.nav-bar-box {
+    background-color: #951414;
+    padding: 0.1rem;
+    color: white;
+    font-family: reactor7;
+    display: flex;
+    justify-content: right;
+    /* align-items: center; */
+}
+.nav-menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+.nav-menu ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-menu ul li {
+    display: flex;
+}
+
+a:link {
+    text-decoration: none;
+}
+.navlink {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: white;
+}
+.navlink:hover {
+    color: rgb(255, 194, 194);
+}
+
+.hamburger {
+    display: none;
+    @media screen and (max-width: 768px) {
+        display: flex;
+        cursor: pointer;
+    }
+}
+#hamburger-svg {
+    padding: 1rem;
+}
+
+.hamburger:active {
+    background-color: aqua;
+}
