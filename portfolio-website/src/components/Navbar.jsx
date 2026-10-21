@@ -1,4 +1,5 @@
 // referenced https://www.geeksforgeeks.org/reactjs/create-a-responsive-navbar-using-reactjs/
+// and https://khuang159.medium.com/creating-a-hamburger-menu-in-react-f22e5ae442cb 
 
 import { useState } from 'react'
 import './Navbar.css'
@@ -12,6 +13,9 @@ function Navbar() {
     const toggleHamburger = () => {
         setHamburgerOpen(!hamburgerOpen);
     }
+    const closeHamburger = () => {
+        setHamburgerOpen(false);
+    }
 
 
     return (
@@ -23,12 +27,12 @@ function Navbar() {
 
             <div className="nav-menu">
                 <ul className="menu-left">
-                    <li><NavLink to="/" id="home-button">
+                    <li><NavLink to="/" id="home-button" onClick={closeHamburger}>
                         <h1 className="navlink">home</h1>
                     </NavLink></li>
                 </ul>
                 <ul id="menu-right">
-                    <li><NavLink to="/research">
+                    <li><NavLink to="/research" onClick={closeHamburger}>
                         <h1 className="navlink">research</h1>
                     </NavLink></li>
             
@@ -37,17 +41,17 @@ function Navbar() {
                 </ul>
             </div>
 
-            <style jsx>{`
+            <style>{`
                 .nav-bar-box {
                     @media screen and (max-width: 768px) {
                         display: ${hamburgerOpen ? 'inline-block' : 'flex'};
+                        height: ${hamburgerOpen ? '100vh' : '5rem'};
+                        width: 100vw;
                     }
                 }
                 .nav-menu {
                     @media screen and (max-width: 768px) {
                         display: ${hamburgerOpen ? 'inline-block' : 'none'};
-                        height: 100vh;
-                        width: 100vw;
                     }
                 }
                 .nav-menu ul {
