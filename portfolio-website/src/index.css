@@ -1,4 +1,10 @@
 :root {
+  --red-color: #951414;
+  background-color: var(--red-color);
+}
+
+h1, h2, h3 {
+  font-family: 'reactor7';
 }
 
 @font-face {
@@ -12,4 +18,8 @@
   src: local('reactor7'), url(./fonts/reactor7/reactor7.ttf) format('truetype');
   /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
+}
+
+#footer {
+  padding: 3rem;
 }

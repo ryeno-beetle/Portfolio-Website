@@ -20,6 +20,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/research" element={<Research/>}/>
         </Routes>
+        <div id="footer"></div>
       </Router>
     </>
   );

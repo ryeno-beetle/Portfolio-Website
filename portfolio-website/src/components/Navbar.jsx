@@ -52,6 +52,7 @@ function Navbar() {
                 .nav-menu {
                     @media screen and (max-width: 768px) {
                         display: ${hamburgerOpen ? 'inline-block' : 'none'};
+
                     }
                 }
                 .nav-menu ul {
