@@ -35,8 +35,10 @@ function Navbar() {
                     <li><NavLink to="/research" onClick={closeHamburger}>
                         <h1 className="navlink">research</h1>
                     </NavLink></li>
-            
-                    <li><h1 className="navlink">game dev</h1></li>
+                    <li><NavLink to="/games-and-interactive-art" onClick={closeHamburger}>
+                        <h1 className="navlink">games + interactive art</h1>
+                    </NavLink></li>
+
                     <li><h1 className="navlink">disability studies</h1></li>
                 </ul>
             </div>

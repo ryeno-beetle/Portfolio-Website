@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Research from "./pages/Research.jsx";
+import GamesAndInteractiveArt from './pages/GamesAndInteractiveArt.jsx';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/research" element={<Research/>}/>
+          <Route path="/games-and-interactive-art" element={<GamesAndInteractiveArt/>}/>
         </Routes>
         <div id="footer"></div>
       </Router>
