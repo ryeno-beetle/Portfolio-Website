@@ -18,9 +18,9 @@ function App() {
       <Router basename={'/Portfolio-Website/'}>
         <Navbar></Navbar>
         <Routes>
-          <Route path="/Portfolio-Website" element={<Home/>}/>
-          <Route path="/Portfolio-Website/research" element={<Research/>}/>
-          <Route path="/Portfolio-Website/games-and-interactive-art" element={<GamesAndInteractiveArt/>}/>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/research" element={<Research/>}/>
+          <Route path="/games-and-interactive-art" element={<GamesAndInteractiveArt/>}/>
         </Routes>
         <div id="footer"></div>
       </Router>
