@@ -27,15 +27,15 @@ function Navbar() {
 
             <div className="nav-menu">
                 <ul className="menu-left">
-                    <li><NavLink to="/Portfolio-Website" id="home-button" onClick={closeHamburger}>
+                    <li><NavLink to="/" id="home-button" onClick={closeHamburger}>
                         <h1 className="navlink">home</h1>
                     </NavLink></li>
                 </ul>
                 <ul id="menu-right">
-                    <li><NavLink to="/Portfolio-Website/research" onClick={closeHamburger}>
+                    <li><NavLink to="/research" onClick={closeHamburger}>
                         <h1 className="navlink">research</h1>
                     </NavLink></li>
-                    <li><NavLink to="/Portfolio-Website/games-and-interactive-art" onClick={closeHamburger}>
+                    <li><NavLink to="/games-and-interactive-art" onClick={closeHamburger}>
                         <h1 className="navlink">games + interactive art</h1>
                     </NavLink></li>
 
