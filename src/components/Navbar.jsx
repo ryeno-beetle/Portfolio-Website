@@ -3,11 +3,11 @@
 
 import { useState } from 'react'
 import './Navbar.css'
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import Hamburger from "./Hamburger.jsx";
 
 
-function Navbar() {
+function Navbar({page, setPage}) {
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
     const toggleHamburger = () => {
@@ -15,6 +15,11 @@ function Navbar() {
     }
     const closeHamburger = () => {
         setHamburgerOpen(false);
+    }
+
+    const onLinkClick = (pageName) => {
+        closeHamburger();
+        setPage(pageName);
     }
 
 
@@ -26,6 +31,24 @@ function Navbar() {
             </div>
 
             <div className="nav-menu">
+                <ul className="menu-left">
+                    <li>
+                        <h1 className="navlink" onClick={onLinkClick("Home")}>home</h1>
+                    </li>
+                </ul>
+                <ul id="menu-right">
+                    <li>
+                        <h1 className="navlink" onClick={onLinkClick("Research")}>research</h1>
+                    </li>
+                    <li>
+                        <h1 className="navlink" onClick={onLinkClick("GamesAndInteractiveArt")}>games + interactive art</h1>
+                    </li>
+
+                    <li><h1 className="navlink">disability studies</h1></li>
+                </ul>
+            </div>
+
+            {/* <div className="nav-menu">
                 <ul className="menu-left">
                     <li><NavLink to="/" id="home-button" onClick={closeHamburger}>
                         <h1 className="navlink">home</h1>
@@ -41,7 +64,7 @@ function Navbar() {
 
                     <li><h1 className="navlink">disability studies</h1></li>
                 </ul>
-            </div>
+            </div> */}
 
             <style>{`
                 .nav-bar-box {

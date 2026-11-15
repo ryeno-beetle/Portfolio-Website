@@ -36,6 +36,7 @@ a:link {
 }
 .navlink:hover {
     color: rgb(255, 194, 194);
+    cursor: pointer;
 }
 
 .hamburger {
