@@ -1,5 +1,5 @@
 import * as React from "react";
-import './Navbar.css'
+import '../Navbar.css'
 const Hamburger = (props) => (
   <svg
     id="hamburger-svg"

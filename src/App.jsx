@@ -1,12 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Navbar from './components/Navbar.jsx'
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from "react-router-dom";
-import './components/Navbar.css'
+import './Navbar.css'
 import Hamburger from "./components/Hamburger.jsx";
 
 import Home from "./pages/Home.jsx";
@@ -109,15 +103,6 @@ function App() {
       </div>
       {pageControl()}
       <div id="footer"></div>
-      {/* <Router basename={'/Portfolio-Website/'}>
-        <Navbar></Navbar>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/research" element={<Research/>}/>
-          <Route path="/games-and-interactive-art" element={<GamesAndInteractiveArt/>}/>
-        </Routes>
-        <div id="footer"></div>
-      </Router> */}
     </>
   );
 }
