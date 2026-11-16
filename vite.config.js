@@ -6,15 +6,17 @@ export default defineConfig({
   plugins: [react()],
   base: "/Portfolio-Website/",
   build: {
-    rollupOptions: {
+    rolldownOptions: {
       output: {
         assetFileNames: (assetInfo) => {
           var info = assetInfo.name.split(".");
           var extType = info[info.length - 1];
           if (/ttf/.test(extType)) {
-            extType = "fonts";
+            extType = "fonts/";
+          } else {
+            extType = "";
           }
-          return `${extType}/[name]-[hash][extname]`;
+          return `assets/${extType}[name]-[hash][extname]`;
         },
       },
     },
