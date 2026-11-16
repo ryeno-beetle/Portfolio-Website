@@ -1,0 +1,10 @@
+h1, h2, h3 {
+  font-family: 'reactor7';
+}
+
+@font-face {
+  font-family: 'reactor7';
+  src: local('reactor7'), url(reactor7.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}

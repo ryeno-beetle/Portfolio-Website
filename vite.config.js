@@ -16,7 +16,7 @@ export default defineConfig({
           } else {
             extType = "";
           }
-          return `${extType}[name]-[hash][extname]`;
+          return `assets/${extType}[name]-[hash][extname]`;
         },
       },
     },
