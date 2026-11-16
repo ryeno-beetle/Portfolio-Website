@@ -5,20 +5,20 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [react()],
   base: "/Portfolio-Website/",
-  build: {
-    rolldownOptions: {
-      output: {
-        assetFileNames: (assetInfo) => {
-          var info = assetInfo.name.split(".");
-          var extType = info[info.length - 1];
-          if (/ttf/.test(extType)) {
-            extType = "fonts/";
-          } else {
-            extType = "";
-          }
-          return `assets/${extType}[name]-[hash][extname]`;
-        },
-      },
-    },
-  }
+  // build: {
+  //   rolldownOptions: {
+  //     output: {
+  //       assetFileNames: (assetInfo) => {
+  //         var info = assetInfo.name.split(".");
+  //         var extType = info[info.length - 1];
+  //         if (/ttf/.test(extType)) {
+  //           extType = "fonts/";
+  //         } else {
+  //           extType = "";
+  //         }
+  //         return `assets/${extType}[name]-[hash][extname]`;
+  //       },
+  //     },
+  //   },
+  // }
 })
