@@ -1,2 +1,1 @@
 deploy: https://ucilasmana.medium.com/deploying-a-static-vite-app-on-github-pages-with-github-actions-03a67bb9ac4e
-fix 404 error with vite + react router: https://blog.devgenius.io/how-to-deploy-your-vite-react-app-to-github-pages-with-and-without-react-router-b060d912b10e
