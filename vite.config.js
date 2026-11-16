@@ -14,7 +14,7 @@ export default defineConfig({
           if (/ttf/.test(extType)) {
             extType = "fonts";
           }
-          return `static/${extType}/[name]-[hash][extname]`;
+          return `${extType}/[name]-[hash][extname]`;
         },
       },
     },
