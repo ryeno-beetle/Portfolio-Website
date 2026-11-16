@@ -7,6 +7,7 @@ import Home from "./pages/Home.jsx";
 import Research from "./pages/Research.jsx";
 import GamesAndInteractiveArt from './pages/GamesAndInteractiveArt.jsx';
 
+import reactor7font from './assets/fonts/reactor7.ttf'
 
 function App() {
 
@@ -100,6 +101,14 @@ function App() {
             }
             
         `}</style>
+        <style>
+            {`
+                @font-face {
+                font-family: 'reactor7';
+                src: local('reactor7'), url(${reactor7font}) format('truetype');
+                }
+            `}
+        </style>
       </div>
       {pageControl()}
       <div id="footer"></div>
